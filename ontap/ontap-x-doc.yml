@@ -210,13 +210,6 @@ paths:
         filename: get-cluster-chassis-.html
         subcategory: Retrieve cluster chassis
         explorer: false
-  "/cluster/firmware/history":
-    get:
-      x-doc:
-        title: Retrieve history details for firmware update requests
-        category: cluster
-        filename: get-cluster-firmware-history.html
-        explorer: false
   "/cluster/jobs":
     get:
       x-doc:
@@ -240,45 +233,9 @@ paths:
         filename: patch-cluster-jobs-.html
         subcategory: View and manage cluster jobs
         explorer: false
-  "/cluster/licensing/capacity-pools":
-    get:
-      x-doc:
-        title: Retrieve capacity pools
-        category: cluster
-        filename: get-cluster-licensing-capacity-pools.html
-        subcategory: Retrieve capacity pool licenses
-        explorer: false
-  "/cluster/licensing/capacity-pools/{serial_number}":
-    get:
-      x-doc:
-        title: Retrieve capacity pool information
-        category: cluster
-        filename: get-cluster-licensing-capacity-pools-.html
-        subcategory: Retrieve capacity pool licenses
-        explorer: false
-  "/cluster/licensing/license-managers":
-    get:
-      x-doc:
-        title: Retrieve license managers
-        category: cluster
-        filename: get-cluster-licensing-license-managers.html
-        subcategory: Manage cluster license managers
-        explorer: false
-  "/cluster/licensing/license-managers/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve license manager information
-        category: cluster
-        filename: get-cluster-licensing-license-managers-.html
-        subcategory: Manage cluster license managers
-        explorer: false
-    patch:
-      x-doc:
-        title: Update license manager configuration
-        category: cluster
-        filename: patch-cluster-licensing-license-managers-.html
-        subcategory: Manage cluster license managers
-        explorer: false
+  
+  
+ 
   "/cluster/licensing/licenses":
     get:
       x-doc:
@@ -4252,7 +4209,7 @@ paths:
         filename: post-storage-qos-policies.html
         subcategory: Manage QoS policies
         explorer: false
-  "/storage/qos/policies/{uuid}":
+  "/storage/qos/policies/{policy.uuid}":
     delete:
       x-doc:
         title: Delete a QoS policy
@@ -4629,7 +4586,7 @@ paths:
         filename: post-storage-snapshot-policies.html
         subcategory: Create and retrieve Snapshot copy policies
         explorer: false
-  "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules":
+  "/storage/snapshot-policies/{snapshot-policy.uuid}/schedules":
     get:
       x-doc:
         title: Retrieve Snapshot copy policy schedules
@@ -4644,7 +4601,7 @@ paths:
         filename: post-storage-snapshot-policies-schedules.html
         subcategory: Manage Snapshot copy policies and schedules
         explorer: false
-  "/storage/snapshot-policies/{snapshot_policy.uuid}/schedules/{schedule.uuid}":
+  "/storage/snapshot-policies/{snapshot-policy.uuid}/schedules/{schedule.uuid}":
     delete:
       x-doc:
         title: Delete a schedule from a Snapshot copy policy
