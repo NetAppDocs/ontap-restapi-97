@@ -254,22 +254,22 @@ paths:
   "/cluster/licensing/licenses/{name}":
     delete:
       x-doc:
-        title: Delete a license
+        title: Delete a license 
         category: cluster
         filename: delete-cluster-licensing-licenses-.html
-        subcategory: Manage cluster licensing
+        subcategory: Manage a cluster license package 
         explorer: false
     get:
       x-doc:
         title: Retrieve a license package
         category: cluster
         filename: get-cluster-licensing-licenses-.html
-        subcategory: Manage cluster licensing
+        subcategory: Manage a cluster license package
         explorer: false
   "/cluster/mediators":
     get:
       x-doc:
-        title: Retrieve ONTAP Mediators configured in the cluster
+        title: Retrieve ONTAP Mediators configured in the cluster 
         category: cluster
         filename: get-cluster-mediators.html
         subcategory: Manage cluster mediators
