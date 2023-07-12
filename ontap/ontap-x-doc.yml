@@ -266,35 +266,7 @@ paths:
         filename: get-cluster-licensing-licenses-.html
         subcategory: Manage a cluster license package
         explorer: false
-  "/cluster/mediators":
-    get:
-      x-doc:
-        title: Retrieve ONTAP Mediators configured in the cluster 
-        category: cluster
-        filename: get-cluster-mediators.html
-        explorer: false
-    post:
-      x-doc:
-        title: Create and connect an ONTAP Mediator
-        category: cluster
-        filename: post-cluster-mediators.html
-        subcategory: Manage cluster mediators
-        explorer: false
-  "/cluster/mediators/{uuid}":
-    delete:
-      x-doc:
-        title: Delete an ONTAP Mediator
-        category: cluster
-        filename: delete-cluster-mediators-.html
-        subcategory: Manage cluster mediators
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve ONTAP Mediator state and configuration
-        category: cluster
-        filename: get-cluster-mediators-.html
-        subcategory: Manage cluster mediators
-        explorer: false
+  
   "/cluster/metrics":
     get:
       x-doc:
@@ -303,122 +275,8 @@ paths:
         filename: get-cluster-metrics.html
         subcategory: Manage cluster mediators
         explorer: false
-  "/cluster/metrocluster":
-    get:
-      x-doc:
-        title: Retrieve MetroCluster status and configuration details
-        category: cluster
-        filename: get-cluster-metrocluster.html
-        subcategory: View and manage MetroCluster configurations
-        explorer: false
-    patch:
-      x-doc:
-        title: Initiate a switchover, heal, or switchback operation
-        category: cluster
-        filename: patch-cluster-metrocluster.html
-        subcategory: View and manage MetroCluster configurations
-        explorer: false
-    post:
-      x-doc:
-        title: Set up a MetroCluster configuration
-        category: cluster
-        filename: post-cluster-metrocluster.html
-        subcategory: View and manage MetroCluster configurations
-        explorer: false
-  "/cluster/metrocluster/diagnostics":
-    get:
-      x-doc:
-        title: Retrieve diagnostic operation results for a MetroCluster
-          configuration
-        category: cluster
-        filename: get-cluster-metrocluster-diagnostics.html
-        subcategory: Display MetroCluster diagnostics
-        explorer: false
-    post:
-      x-doc:
-        title: Start MetroCluster diagnostics or set up a periodic diagnostic schedule
-        category: cluster
-        filename: post-cluster-metrocluster-diagnostics.html
-        subcategory: Display MetroCluster diagnostics
-        explorer: false
-  "/cluster/metrocluster/dr-groups":
-    get:
-      x-doc:
-        title: Retrieve all DR groups in a MetroCluster IP configuration
-        category: cluster
-        filename: get-cluster-metrocluster-dr-groups.html
-        subcategory: Manage MetroCluster DR groups
-        explorer: false
-    post:
-      x-doc:
-        title: Create a new DR group in a MetroCluster IP configuration 
-        category: cluster
-        filename: post-cluster-metrocluster-dr-groups.html
-        subcategory: Manage MetroCluster DR groups
-        explorer: false
-  "/cluster/metrocluster/dr-groups/{id}":
-    delete:
-      x-doc:
-        title: Remove a DR group from a MetroCluster IP configuration
-        category: cluster
-        filename: delete-cluster-metrocluster-dr-groups-.html
-        subcategory: Manage MetroCluster DR groups
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve DR group information using the DR group ID
-        category: cluster
-        filename: get-cluster-metrocluster-dr-groups-.html
-        subcategory: Manage MetroCluster DR groups
-        explorer: false
-  "/cluster/metrocluster/interconnects":
-    get:
-      x-doc:
-        title: Retrieve interconnect adapter information for nodes in MetroCluster
-        category: cluster
-        filename: get-cluster-metrocluster-interconnects.html
-        subcategory: View and update MetroCluster interconnects
-        explorer: false
-  "/cluster/metrocluster/interconnects/{node.uuid}/{partner_type}/{adapter}":
-    get:
-      x-doc:
-        title: Retrieve information about a MetroCluster interconnect for a partner type and adapter
-        category: cluster
-        filename: get-cluster-metrocluster-interconnects--.html
-        subcategory: View and update MetroCluster interconnects
-        explorer: false
-  "/cluster/metrocluster/nodes":
-    get:
-      x-doc:
-        title: Retrieve MetroCluster nodes and configurations
-        category: cluster
-        filename: get-cluster-metrocluster-nodes.html
-        subcategory: Retrieve MetroCluster node configurations
-        explorer: false
-  "/cluster/metrocluster/nodes/{node.uuid}":
-    get:
-      x-doc:
-        title: Retrieve node configuration in MetroCluster
-        category: cluster
-        filename: get-cluster-metrocluster-nodes-.html
-        subcategory: Retrieve MetroCluster node configurations
-        explorer: false
-  "/cluster/metrocluster/operations":
-    get:
-      x-doc:
-        title: Retrieve MetroCluster operations on the local cluster
-        category: cluster
-        filename: get-cluster-metrocluster-operations.html
-        subcategory: Retrieve MetroCluster operations
-        explorer: false
-  "/cluster/metrocluster/operations/{uuid}":
-    get:
-      x-doc:
-        title: Retrieve information about a MetroCluster operation
-        category: cluster
-        filename: get-cluster-metrocluster-operations-.html
-        subcategory: Retrieve MetroCluster operations
-        explorer: false
+ 
+  
   "/cluster/nodes":
     get:
       x-doc:
@@ -454,14 +312,6 @@ paths:
         title: Update node information
         category: cluster
         filename: patch-cluster-nodes-.html
-        subcategory: Manage cluster nodes
-        explorer: false
-  "/cluster/nodes/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve node historical performance metrics 
-        category: cluster
-        filename: get-cluster-nodes-metrics.html
         subcategory: Manage cluster nodes
         explorer: false
   "/cluster/ntp/keys":
@@ -674,14 +524,7 @@ paths:
         filename: get-cluster-software-packages-.html
         subcategory: Manage cluster software
         explorer: false
-  "/cluster/software/upload":
-    post:
-      x-doc:
-        title: Upload a software or firmware package located on the local file system
-        category: cluster
-        filename: post-cluster-software-upload.html
-        subcategory: Manage cluster software
-        explorer: false
+  
  
   "/name-services/dns":
     get:
@@ -833,96 +676,7 @@ paths:
         filename: patch-name-services-nis-.html
         subcategory: Manage NIS server configurations
         explorer: false
-  "/name-services/unix-groups":
-    get:
-      x-doc:
-        title: Retrieve UNIX groups for all SVMs
-        category: name-services
-        filename: get-name-services-unix-groups.html
-        subcategory: Manage UNIX group configurations
-        explorer: false
-    post:
-      x-doc:
-        title: Create local UNIX group configuration for an SVM 
-        category: name-services
-        filename: post-name-services-unix-groups.html
-        subcategory: Manage UNIX group configurations
-        explorer: false
-  "/name-services/unix-groups/{svm.uuid}/{name}":
-    delete:
-      x-doc:
-        title: Delete UNIX group configuration for an SVM
-        category: name-services
-        filename: delete-name-services-unix-groups-.html
-        subcategory: Manage UNIX group configurations
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve UNIX group information for a group and SVM
-        category: name-services
-        filename: get-name-services-unix-groups-.html
-        subcategory: Manage UNIX group configurations
-        explorer: false
-    patch:
-      x-doc:
-        title: Update UNIX group information for a group in an SVM
-        category: name-services
-        filename: patch-name-services-unix-groups-.html
-        subcategory: Manage UNIX group configurations
-        explorer: false
-  "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users":
-    post:
-      x-doc:
-        title: Adds users to a UNIX group and SVM
-        category: name-services
-        filename: post-name-services-unix-groups--users.html
-        subcategory: Manage UNIX group users
-        explorer: false
-  "/name-services/unix-groups/{svm.uuid}/{unix_group.name}/users/{name}":
-    delete:
-      x-doc:
-        title: Delete a user from a UNIX group
-        category: name-services
-        filename: delete-name-services-unix-groups--users-.html
-        subcategory: Manage UNIX group users
-        explorer: false
-  "/name-services/unix-users":
-    get:
-      x-doc:
-        title: Retrieve all UNIX users for all SVMs
-        category: name-services
-        filename: get-name-services-unix-users.html
-        subcategory: Manage UNIX user configurations
-        explorer: false
-    post:
-      x-doc:
-        title: Create local UNIX user configuration for an SVM
-        category: name-services
-        filename: post-name-services-unix-users.html
-        subcategory: Manage UNIX user configurations
-        explorer: false
-  "/name-services/unix-users/{svm.uuid}/{name}":
-    delete:
-      x-doc:
-        title: Delete a UNIX user configuration for an SVM
-        category: name-services
-        filename: delete-name-services-unix-users-.html
-        subcategory: Manage UNIX user configurations
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve UNIX user information for a user and SVM
-        category: name-services
-        filename: get-name-services-unix-users-.html
-        subcategory: Manage UNIX user configurations
-        explorer: false
-    patch:
-      x-doc:
-        title: Update UNIX user information for a user and SVM
-        category: name-services
-        filename: patch-name-services-unix-users-.html
-        subcategory: Manage UNIX user configurations
-        explorer: false
+  
   "/network/ethernet/broadcast-domains":
     get:
       x-doc:
@@ -997,53 +751,10 @@ paths:
         filename: patch-network-ethernet-ports-.html
         subcategory: Manage network ethernet ports
         explorer: false
-  "/network/ethernet/ports/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve historical port performance metrics
-        category: networking
-        filename: get-network-ethernet-ports-metrics.html
-        subcategory: Manage network ethernet ports
-        explorer: false
-  "/network/ethernet/switch/ports":
-    get:
-      x-doc:
-        title: Retrieve Ethernet switch ports
-        category: networking
-        filename: get-network-ethernet-switch-ports.html
-        subcategory: Retrieve network ethernet switch ports
-        explorer: false
-  "/network/ethernet/switch/ports/{switch}/{identity.name}/{identity.index}":
-    get:
-      x-doc:
-        title: Retrieve an Ethernet switch port
-        category: networking
-        filename: get-network-ethernet-switch-ports--.html
-        subcategory: Retrieve network ethernet switch ports
-        explorer: false
-  "/network/ethernet/switches":
-    get:
-      x-doc:
-        title: Retrieve Ethernet switches attached to a chassis
-        category: networking
-        filename: get-network-ethernet-switches.html
-        subcategory: Manage ethernet switches
-        explorer: false
-  "/network/ethernet/switches/{name}":
-    get:
-      x-doc:
-        title: Retrieve Ethernet switch details
-        category: networking
-        filename: get-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
-        explorer: false
-    patch:
-      x-doc:
-        title: Update an Ethernet switch
-        category: networking
-        filename: patch-network-ethernet-switches-.html
-        subcategory: Manage ethernet switches
-        explorer: false
+  
+
+ 
+   
   "/network/fc/interfaces":
     get:
       x-doc:
@@ -1081,14 +792,7 @@ paths:
         filename: patch-network-fc-interfaces-.html
         subcategory: Manage FC network interfaces
         explorer: false
-  "/network/fc/interfaces/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve FC interface historical performance metrics
-        category: networking
-        filename: get-network-fc-interfaces-metrics.html
-        subcategory: Manage FC network interfaces
-        explorer: false
+
   "/network/fc/logins":
     get:
       x-doc:
@@ -1128,14 +832,7 @@ paths:
         filename: patch-network-fc-ports-.html
         subcategory: Retrieve FC port information
         explorer: false
-  "/network/fc/ports/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve FC port historical performance metrics 
-        category: networking
-        filename: get-network-fc-ports-metrics.html
-        subcategory: Retrieve FC port information
-        explorer: false
+
   "/network/fc/wwpn-aliases":
     get:
       x-doc:
@@ -1278,14 +975,7 @@ paths:
         filename: patch-network-ip-interfaces-.html
         subcategory: Manage network IP interfaces
         explorer: false
-  "/network/ip/interfaces/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve interface historical performance metrics 
-        category: networking
-        filename: get-network-ip-interfaces-metrics.html
-        subcategory: Manage network IP interfaces
-        explorer: false
+  
   "/network/ip/routes":
     get:
       x-doc:
@@ -1324,33 +1014,12 @@ paths:
         filename: get-network-ip-service-policies.html
         subcategory: Manage network IP service policies
         explorer: false
-    post:
-      x-doc:
-        title: Create a service policy for network interfaces
-        category: networking
-        filename: post-network-ip-service-policies.html
-        subcategory: Manage network IP service policies
-        explorer: false
   "/network/ip/service-policies/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a service policy for network interfaces
-        category: networking
-        filename: delete-network-ip-service-policies-.html
-        subcategory: Manage network IP service policies
-        explorer: false
     get:
       x-doc:
         title: Retrieve a service policy
         category: networking
         filename: get-network-ip-service-policies-.html
-        subcategory: Manage network IP service policies
-        explorer: false
-    patch:
-      x-doc:
-        title: Update a service policy for network interfaces
-        category: networking
-        filename: patch-network-ip-service-policies-.html
         subcategory: Manage network IP service policies
         explorer: false
    
