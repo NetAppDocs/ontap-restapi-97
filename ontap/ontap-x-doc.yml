@@ -3987,35 +3987,8 @@ paths:
         filename: get-storage-volume-efficiency-policies.html
         subcategory: Manage volume efficiency policies
         explorer: false
-    post:
-      x-doc:
-        title: Create a volume efficiency policy
-        category: storage
-        filename: post-storage-volume-efficiency-policies.html
-        subcategory: Manage volume efficiency policies
-        explorer: false
-  "/storage/volume-efficiency-policies/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a volume efficiency policy
-        category: storage
-        filename: delete-storage-volume-efficiency-policies-.html
-        subcategory: Manage volume efficiency policies
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve volume efficiency policy details
-        category: storage
-        filename: get-storage-volume-efficiency-policies-.html
-        subcategory: Manage volume efficiency policies
-        explorer: false
-    patch:
-      x-doc:
-        title: Update a volume efficiency policy
-        category: storage
-        filename: patch-storage-volume-efficiency-policies-.html
-        subcategory: Manage volume efficiency policies
-        explorer: false
+  
+ 
   "/storage/volumes":
     get:
       x-doc:
@@ -4054,13 +4027,6 @@ paths:
         subcategory: Manage storage volumes
         explorer: false
   "/storage/volumes/{volume.uuid}/files/{path}":
-    delete:
-      x-doc:
-        title: Delete an existing file or directory 
-        category: storage
-        filename: delete-storage-volumes-files-.html
-        subcategory: Manage files and directories
-        explorer: false
     get:
       x-doc:
         title: Retrieve files and directories 
