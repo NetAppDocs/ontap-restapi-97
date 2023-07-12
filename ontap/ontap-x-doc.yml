@@ -1334,51 +1334,8 @@ paths:
         filename: get-protocols-file-security-effective-permissions-.html
         subcategory: View file security permissions
         explorer: false
-  "/protocols/file-security/permissions/{svm.uuid}/{path}":
-    get:
-      x-doc:
-        title: Retrieve file permissions
-        category: NAS
-        filename: get-protocols-file-security-permissions-.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
-    patch:
-      x-doc:
-        title: Update SD information
-        category: NAS
-        filename: patch-protocols-file-security-permissions-.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
-    post:
-      x-doc:
-        title: Apply an SD to a path
-        category: NAS
-        filename: post-protocols-file-security-permissions-.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
-  "/protocols/file-security/permissions/{svm.uuid}/{path}/acl":
-    post:
-      x-doc:
-        title: Add a new SACL or DACL ACE
-        category: NAS
-        filename: post-protocols-file-security-permissions--acl.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
-  "/protocols/file-security/permissions/{svm.uuid}/{path}/acl/{user}":
-    delete:
-      x-doc:
-        title: Delete a SACL or DACL ACL
-        category: NAS
-        filename: delete-protocols-file-security-permissions--acl-.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
-    patch:
-      x-doc:
-        title: Update SACLs or DACLs
-        category: NAS
-        filename: patch-protocols-file-security-permissions--acl-.html
-        subcategory: Manage file security permissions and audit policies
-        explorer: false
+
+
   "/protocols/fpolicy":
     get:
       x-doc:
@@ -1605,14 +1562,7 @@ paths:
         filename: patch-protocols-ndmp-svms-.html
         subcategory: Manage NDMP configuration of SVM
         explorer: false
-  "/protocols/ndmp/svms/{svm.uuid}/passwords/{user}":
-    get:
-      x-doc:
-        title: Generate and retrieve the password for an NDMP user
-        category: ndmp
-        filename: get-protocols-ndmp-svms-passwords-.html
-        subcategory: Generate NDMP user password
-        explorer: false
+ 
   
   "/protocols/nfs/connected-clients":
     get:
@@ -2006,39 +1956,9 @@ paths:
         filename: get-protocols-s3-buckets.html
         subcategory: Manage S3 buckets
         explorer: false
-    post:
-      x-doc:
-        title: Create S3 bucket configuration for an SVM
-        category: Object-store
-        filename: post-protocols-s3-buckets.html
-        subcategory: Manage S3 buckets
-        explorer: false
+    
          
-  "/protocols/s3/buckets/{svm.uuid}/{uuid}":
-    delete:
-      x-doc:
-        title: Delete S3 bucket configuration for an SVM
-        category: Object-store
-        filename: delete-protocols-s3-buckets-.html
-        subcategory: Manage S3 buckets
-        explorer: false
-        
-    get:
-      x-doc:
-        title: Retrieve S3 bucket configuration for an SVM
-        category: Object-store
-        filename: get-protocols-s3-buckets-.html
-        subcategory: Manage S3 buckets
-        explorer: false
-        
-        
-    patch:
-      x-doc:
-        title: Update S3 bucket configuration for an SVM
-        category: Object-store
-        filename: patch-protocols-s3-buckets-.html
-        subcategory: Manage S3 buckets
-        explorer: false
+  
         
          
   "/protocols/s3/services":
@@ -2116,88 +2036,10 @@ paths:
         filename: patch-protocols-s3-services-buckets-.html
         subcategory: Manage S3 service bucket configuration
         explorer: false
-  "/protocols/s3/services/{svm.uuid}/groups":
-    get:
-      x-doc:
-        title: Retrieve S3 group configuration
-        category: Object-store
-        filename: get-protocols-s3-services-groups.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-    post:
-      x-doc:
-        title: Create S3 group configuration
-        category: Object-store
-        filename: post-protocols-s3-services-groups.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-  "/protocols/s3/services/{svm.uuid}/groups/{id}":
-    delete:
-      x-doc:
-        title: Delete S3 group configuration for an SVM
-        category: Object-store
-        filename: delete-protocols-s3-services-groups-.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve S3 group configuration for an SVM
-        category: Object-store
-        filename: get-protocols-s3-services-groups-.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-    patch:
-      x-doc:
-        title: Update S3 group configuration for an SVM
-        category: Object-store
-        filename: patch-protocols-s3-services-groups-.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-  "/protocols/s3/services/{svm.uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve S3 protocol historical performance metrics   
-        category: Object-store
-        filename: get-protocols-s3-services-metrics.html
-        subcategory: Manage S3 service group configuration
-        explorer: false
-  "/protocols/s3/services/{svm.uuid}/policies":
-    get:
-      x-doc:
-        title: Retrieve S3 policies in SVM configuration
-        category: Object-store
-        filename: get-protocols-s3-services-policies.html
-        subcategory: Manage S3 service policies 
-        explorer: false
-    post:
-      x-doc:
-        title: Create an S3 policy configuration
-        category: Object-store
-        filename: post-protocols-s3-services-policies.html
-        subcategory: Manage S3 service policies
-        explorer: false
-  "/protocols/s3/services/{svm.uuid}/policies/{name}":
-    delete:
-      x-doc:
-        title: Delete an S3 policy configuration
-        category: Object-store
-        filename: delete-protocols-s3-services-policies-.html
-        subcategory: Manage S3 service policies
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve an S3 policy configuration
-        category: Object-store
-        filename: get-protocols-s3-services-policies-.html
-        subcategory: Manage S3 service policies
-        explorer: false
-    patch:
-      x-doc:
-        title: Update an S3 policy configuration
-        category: Object-store
-        filename: patch-protocols-s3-services-policies-.html
-        subcategory: Manage S3 service policies
-        explorer: false
+  
+
+  
+  
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
@@ -2296,36 +2138,7 @@ paths:
         filename: post-protocols-san-igroups.html
         subcategory: Manage SAN iGroups
         explorer: false
-  "/protocols/san/igroups/{igroup.uuid}/igroups":
-    get:
-      x-doc:
-        title: Retrieve nested initiator groups of an initiator group
-        category: SAN
-        filename: get-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
-        explorer: false
-    post:
-      x-doc:
-        title: Add nested initiator groups to an initiator group
-        category: SAN
-        filename: post-protocols-san-igroups-igroups.html
-        subcategory: Manage SAN iGroups
-        explorer: false
-  "/protocols/san/igroups/{igroup.uuid}/igroups/{uuid}":
-    delete:
-      x-doc:
-        title: Remove a nested initiator group from an initiator group
-        category: SAN
-        filename: delete-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve a nested initiator group of an initiator group
-        category: SAN
-        filename: get-protocols-san-igroups-igroups-.html
-        subcategory: Manage SAN iGroups
-        explorer: false
+ 
   "/protocols/san/igroups/{igroup.uuid}/initiators":
     get:
       x-doc:
@@ -2356,13 +2169,7 @@ paths:
         filename: get-protocols-san-igroups-initiators-.html
         subcategory: Manage SAN iGroups
         explorer: false
-    patch:
-      x-doc:
-        title: Update an initiator 
-        category: SAN
-        filename: patch-protocols-san-igroups-initiators-.html
-        subcategory: Manage SAN iGroups
-        explorer: false
+   
   "/protocols/san/igroups/{uuid}":
     delete:
       x-doc:
@@ -2515,66 +2322,8 @@ paths:
         subcategory: Manage SAN LUN maps
         explorer: false
  
-  "/protocols/san/portsets":
-    get:
-      x-doc:
-        title: Retrieve portsets
-        category: SAN
-        filename: get-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
-        explorer: false
-    post:
-      x-doc:
-        title: Create a portset
-        category: SAN
-        filename: post-protocols-san-portsets.html
-        subcategory: Manage SAN postSets
-        explorer: false
-  "/protocols/san/portsets/{portset.uuid}/interfaces":
-    get:
-      x-doc:
-        title: Retrieve portset network interfaces
-        category: SAN
-        filename: get-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
-        explorer: false
-    post:
-      x-doc:
-        title: Add portset network interfaces
-        category: SAN
-        filename: post-protocols-san-portsets-interfaces.html
-        subcategory: Manage SAN postSets
-        explorer: false
-  "/protocols/san/portsets/{portset.uuid}/interfaces/{uuid}":
-    delete:
-      x-doc:
-        title: Delete portset network interfaces
-        category: SAN
-        filename: delete-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve specific portset network interfaces
-        category: SAN
-        filename: get-protocols-san-portsets-interfaces-.html
-        subcategory: Manage SAN postSets
-        explorer: false
-  "/protocols/san/portsets/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a portset
-        category: SAN
-        filename: delete-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve a portset
-        category: SAN
-        filename: get-protocols-san-portsets-.html
-        subcategory: Manage SAN postSets
-        explorer: false
+ 
+ 
   "/protocols/vscan":
     get:
       x-doc:
@@ -2738,14 +2487,6 @@ paths:
         title: Retrieve information about security configured on the cluster
         category: security
         filename: get-security.html
-        subcategory: Manage security-related operations
-        explorer: false
-    patch:
-      x-doc:
-        title: Update the software FIPS mode or enable conversion of non-encrypted
-          metadata volumes non-NAE aggregates 
-        category: security
-        filename: patch-security.html
         subcategory: Manage security-related operations
         explorer: false
   "/security/accounts":
@@ -3061,14 +2802,7 @@ paths:
         filename: post-security-azure-key-vaults-restore.html
         subcategory: Manage Azure Key Vaults 
         explorer: false
-  "/security/certificate-signing-request":
-    post:
-      x-doc:
-        title: Create a certificate signing request
-        category: security
-        filename: post-security-certificate-signing-request.html
-        subcategory: 
-        explorer: false
+ 
   "/security/certificates":
     get:
       x-doc:
@@ -3107,59 +2841,9 @@ paths:
         filename: get-security-certificates-.html
         subcategory: Manage security certificates
         explorer: false
-  "/security/gcp-kms":
-    get:
-      x-doc:
-        title: Retrieve Google Cloud KMS configurations for all clusters and SVMs
-        category: security
-        filename: get-security-gcp-kms.html
-        subcategory: Manage GCP KMS
-        explorer: false
-    post:
-      x-doc:
-        title: Create Google Cloud KMS configuration for an SVM
-        category: security
-        filename: post-security-gcp-kms.html
-        subcategory: Manage GCP KMS
-        explorer: false
-  "/security/gcp-kms/{uuid}":
-    delete:
-      x-doc:
-        title: Delete a Google Cloud KMS configuration
-        category: security
-        filename: delete-security-gcp-kms-.html
-        subcategory: Manage GCP KMS
-        explorer: false
-    get:
-      x-doc:
-        title: Retrieve the Google Cloud KMS configuration
-        category: security
-        filename: get-security-gcp-kms-.html
-        subcategory: Manage GCP KMS
-        explorer: false
-    patch:
-      x-doc:
-        title: Update the Google Cloud KMS configuration
-        category: security
-        filename: patch-security-gcp-kms-.html
-        subcategory: Manage GCP KMS
-        explorer: false
-  "/security/gcp-kms/{gcp_kms.uuid}/rekey-internal":
-    post:
-      x-doc:
-        title: Re-key the internal key in the key hierarchy for an SVM
-        category: security
-        filename: post-security-gcp-kms-rekey-internal.html
-        subcategory: Manage GCP KMS
-        explorer: false
-  "/security/gcp-kms/{gcp_kms.uuid}/restore":
-    post:
-      x-doc:
-        title: Restore keys for an SVM from a Google Cloud KMS
-        category: security
-        filename: post-security-gcp-kms-restore.html
-        subcategory: Manage GCP KMS
-        explorer: false
+ 
+  
+ 
   "/security/ipsec":
     get:
       x-doc:
@@ -3725,13 +3409,7 @@ paths:
         filename: get-storage-flexcache-flexcaches-.html
         subcategory: Manage FlexCache volumes
         explorer: false
-    patch:
-      x-doc:
-        title: Pre-populate a FlexCache volume in the cluster
-        category: storage
-        filename: patch-storage-flexcache-flexcaches-.html
-        subcategory: Manage FlexCache volumes
-        explorer: false
+   
   "/storage/flexcache/origins":
     get:
       x-doc:
@@ -3746,13 +3424,6 @@ paths:
         title: Retrieve attributes of the origin of a FlexCache in the cluster
         category: storage
         filename: get-storage-flexcache-origins-.html
-        subcategory: Manage storage FlexCache origin volumes
-        explorer: false
-    patch:
-      x-doc:
-        title: Modify origin options for an origin volume in the cluster
-        category: storage
-        filename: patch-storage-flexcache-origins-.html
         subcategory: Manage storage FlexCache origin volumes
         explorer: false
   "/storage/luns":
@@ -3835,14 +3506,6 @@ paths:
         title: Update an NVMe namespace
         category: NVMe
         filename: patch-storage-namespaces-.html
-        subcategory: Manage NVMe namespaces
-        explorer: false
-  "/storage/namespaces/{uuid}/metrics":
-    get:
-      x-doc:
-        title: Retrieve historical performance metrics for an NVMe namespace
-        category: NVMe
-        filename: get-storage-namespaces-metrics.html
         subcategory: Manage NVMe namespaces
         explorer: false
   
@@ -4313,38 +3976,9 @@ paths:
         filename: patch-storage-snapshot-policies-.html
         subcategory: Manage Snapshot copy policies and schedules
         explorer: false
-  "/storage/switches":
-    get:
-      x-doc:
-        title: Retrieve storage switches
-        category: storage
-        filename: get-storage-switches.html
-        subcategory: Manage storage switches
-        explorer: false
-  "/storage/switches/{name}":
-    get:
-      x-doc:
-        title: Retrieve a specific storage switch
-        category: storage
-        filename: get-storage-switches-.html
-        subcategory: Manage storage switches
-        explorer: false
-  "/storage/tape-devices":
-    get:
-      x-doc:
-        title: Retrieve tape devices
-        category: storage
-        filename: get-storage-tape-devices.html
-        subcategory: Manage storage tape devices
-        explorer: false
-  "/storage/tape-devices/{node.uuid}/{device_id}":
-    get:
-      x-doc:
-        title: Retrieve a tape device
-        category: storage
-        filename: get-storage-tape-devices-.html
-        subcategory: Manage storage tape devices
-        explorer: false
+  
+  
+ 
   "/storage/volume-efficiency-policies":
     get:
       x-doc:
