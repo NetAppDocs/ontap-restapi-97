@@ -272,7 +272,6 @@ paths:
         title: Retrieve ONTAP Mediators configured in the cluster 
         category: cluster
         filename: get-cluster-mediators.html
-        subcategory: Manage cluster mediators
         explorer: false
     post:
       x-doc:
@@ -4601,7 +4600,7 @@ paths:
         filename: post-storage-snapshot-policies-schedules.html
         subcategory: Manage Snapshot copy policies and schedules
         explorer: false
-  "/storage/snapshot-policies/{snapshot-policy.uuid}/schedules/{schedule.uuid}":
+  "/storage/snapshot-policies/{snapshot-policy.uuid}/schedules/{uuid}":
     delete:
       x-doc:
         title: Delete a schedule from a Snapshot copy policy
