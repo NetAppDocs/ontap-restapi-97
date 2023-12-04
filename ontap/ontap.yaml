@@ -68814,7 +68814,7 @@ paths:
         |--------------------|---------------------|
         |mirror-vault        | async               |
         |     CLI            | REST  |  sync_type  |
-        |     -------------  | ----- |-------------|
+        |-------------|-----|-------------|
         |sync-mirror         | sync  |  sync       |
         |strict-sync-mirror  | sync  | strict_sync |
       tags:
