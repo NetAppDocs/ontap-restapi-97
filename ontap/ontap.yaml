@@ -33961,7 +33961,8 @@ paths:
         * `system node modify` 
         * `vserver services dns modify` 
         * `vserver services name-service dns modify` 
-        * `timezone` * `security ssl modify`
+        * `timezone` 
+        * `security ssl modify`
         ### Learn more
         * [`DOC /cluster`](#docs-cluster-cluster)
       operationId: cluster_modify
