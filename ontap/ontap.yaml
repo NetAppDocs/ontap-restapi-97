@@ -68813,6 +68813,7 @@ paths:
         | CLI                | REST                |
         |--------------------|---------------------|
         |mirror-vault        | async               |
+        
         |     CLI            | REST  |  sync_type  |
         |-------------|-----|-------------|
         |sync-mirror         | sync  |  sync       |
