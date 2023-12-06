@@ -717,14 +717,14 @@ paths:
         title: Retrieve ports
         category: networking
         filename: get-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     post:
       x-doc:
         title: Create a new VLAN or LAG
         category: networking
         filename: post-network-ethernet-ports.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   "/network/ethernet/ports/{uuid}":
     delete:
@@ -732,21 +732,21 @@ paths:
         title: Delete a VLAN or LAG
         category: networking
         filename: delete-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     get:
       x-doc:
         title: Retrieve a physical port, VLAN, or LAG details
         category: networking
         filename: get-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
     patch:
       x-doc:
         title: Update a port
         category: networking
         filename: patch-network-ethernet-ports-.html
-        subcategory: Manage network ethernet ports
+        subcategory: Manage network Ethernet ports
         explorer: false
   
 
@@ -863,7 +863,7 @@ paths:
   "/network/http-proxy":
     get:
       x-doc:
-        title: Retrieve http proxy configurations for all SVMs and cluster
+        title: Retrieve HTTP proxy configurations for all SVMs and cluster
           IPspaces
         category: networking
         filename: get-network-http-proxy.html
@@ -1335,14 +1335,14 @@ paths:
   "/protocols/fpolicy":
     get:
       x-doc:
-        title: Retrieve FPolicy configuration
+        title: Retrieve an FPolicy configuration
         category: NAS
         filename: get-protocols-fpolicy.html
         subcategory: Manage FPolicy configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy configuration
+        title: Create an FPolicy configuration
         category: NAS
         filename: post-protocols-fpolicy.html
         subcategory: Manage FPolicy configuration
@@ -1350,14 +1350,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete FPolicy configuration for an SVM
+        title: Delete the FPolicy configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-.html
         subcategory: Manage FPolicy configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve FPolicy configuration for an SVM
+        title: Retrieve the FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-.html
         subcategory: Manage FPolicy configuration
@@ -1365,14 +1365,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/engines":
     get:
       x-doc:
-        title: Retrieve FPolicy engine configuration for all engines of an SVM 
+        title: Retrieve the FPolicy engine configuration for all engines of an SVM 
         category: NAS
         filename: get-protocols-fpolicy-engines.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy engine configuration for an SVM
+        title: Create the FPolicy engine configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-engines.html
         subcategory: Manage FPolicy engine configuration
@@ -1380,21 +1380,21 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/engines/{name}":
     delete:
       x-doc:
-        title: Delete FPolicy external engine configuration
+        title: Delete an FPolicy external engine configuration
         category: NAS
         filename: delete-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve particular FPolicy engine configuration for an SVM
+        title: Retrieve a particular FPolicy engine configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
         explorer: false
     patch:
       x-doc:
-        title: Update specific FPolicy engine configuration for an SVM
+        title: Update a specific FPolicy engine configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-engines-.html
         subcategory: Manage FPolicy engine configuration
@@ -1402,14 +1402,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/events":
     get:
       x-doc:
-        title: Retrieve FPolicy event configuration for all events for an SVM
+        title: Retrieve a FPolicy event configuration for all events for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy event configuration for an SVM
+        title: Create a FPolicy event configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-events.html
         subcategory: Manage FPolicy event configuration
@@ -1417,21 +1417,21 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/events/{name}":
     delete:
       x-doc:
-        title: Delete specific FPolicy event configuration for an SVM
+        title: Delete a specific FPolicy event configuration for an SVM
         category: NAS
         filename: delete-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve specific FPolicy event configuration for an SVM
+        title: Retrieve a specific FPolicy event configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
         explorer: false
     patch:
       x-doc:
-        title: Update specific FPolicy event configuration for an SVM
+        title: Update a specific FPolicy event configuration for an SVM
         category: NAS
         filename: patch-protocols-fpolicy-events-.html
         subcategory: Manage FPolicy event configuration
@@ -1439,14 +1439,14 @@ paths:
   "/protocols/fpolicy/{svm.uuid}/policies":
     get:
       x-doc:
-        title: Retrieve FPolicy configuration for an SVM
+        title: Retrieve the FPolicy configuration for an SVM
         category: NAS
         filename: get-protocols-fpolicy-policies.html
         subcategory: Manage SVM FPolicy configuration
         explorer: false
     post:
       x-doc:
-        title: Create FPolicy configuration for an SVM
+        title: Create the FPolicy configuration for an SVM
         category: NAS
         filename: post-protocols-fpolicy-policies.html
         subcategory: Manage SVM FPolicy configuration
@@ -2372,14 +2372,14 @@ paths:
         title: Retrieve a Vscan On-Access policy
         category: NAS
         filename: get-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Access policy
         category: NAS
         filename: post-protocols-vscan-on-access-policies.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-access-policies/{name}":
     delete:
@@ -2387,21 +2387,21 @@ paths:
         title: Delete an antivirus On-Access policy configuration
         category: NAS
         filename: delete-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     get:
       x-doc:
         title: Retrieve the Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
     patch:
       x-doc:
-        title: Manage Vscan On-Access policy configuration for an SVM
+        title: Update Vscan On-Access policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-access-policies-.html
-        subcategory: Manage Vscan on-access policy
+        subcategory: Manage Vscan On-Access policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies":
     get:
@@ -2409,14 +2409,14 @@ paths:
         title: Retrieve a Vscan On-Demand policy
         category: NAS
         filename: get-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     post:
       x-doc:
         title: Create a Vscan On-Demand policy
         category: NAS
         filename: post-protocols-vscan-on-demand-policies.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/on-demand-policies/{name}":
     delete:
@@ -2424,26 +2424,26 @@ paths:
         title: Delete Vscan On-Demand configuration
         category: NAS
         filename: delete-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     get:
       x-doc:
         title: Retrieve Vscan On-Demand configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
     patch:
       x-doc:
         title: Update Vscan On-Demand policy configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-on-demand-policies-.html
-        subcategory: Manage Vscan on-demand policy
+        subcategory: Manage Vscan On-Demand policies
         explorer: false
   "/protocols/vscan/{svm.uuid}/scanner-pools":
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve a Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -2458,21 +2458,21 @@ paths:
   "/protocols/vscan/{svm.uuid}/scanner-pools/{name}":
     delete:
       x-doc:
-        title: Delete Vscan scanner-pool configuration
+        title: Delete a Vscan scanner-pool configuration
         category: NAS
         filename: delete-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve Vscan scanner-pool configuration for an SVM
+        title: Retrieve the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: get-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
         explorer: false
     patch:
       x-doc:
-        title: Update Vscan scanner-pool configuration for an SVM
+        title: Update the Vscan scanner-pool configuration for an SVM
         category: NAS
         filename: patch-protocols-vscan-scanner-pools-.html
         subcategory: Manage Vscan scanner-pool configuration
@@ -2540,7 +2540,7 @@ paths:
   "/security/audit/destinations":
     get:
       x-doc:
-        title: Define a remote syslog or splunk server to recieve audit information
+        title: Define a remote syslog or splunk server to receive audit information
         category: security
         filename: get-security-audit-destinations.html
         subcategory: Forward audit logs to syslog/splunk servers
@@ -2686,7 +2686,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update SAML service provider configuration
+        title: Update a SAML service provider configuration
         category: security
         filename: patch-security-authentication-cluster-saml-sp.html
         subcategory: Manage SAML service
@@ -2701,7 +2701,7 @@ paths:
   "/security/authentication/password":
     post:
       x-doc:
-        title: Update user account password
+        title: Update a user account password
         category: security
         filename: post-security-authentication-password.html
         subcategory: Update user account password
@@ -4070,14 +4070,14 @@ paths:
         title: Retrieve the AutoSupport configuration 
         category: support
         filename: get-support-autosupport.html
-        subcategory: AutoSupport configuration
+        subcategory: Manage AutoSupport configuration
         explorer: false
     patch:
       x-doc:
         title: Update AutoSupport configuration for an entire cluster
         category: support
         filename: patch-support-autosupport.html
-        subcategory: AutoSupport configuration
+        subcategory: Manage AutoSupport configuration
         explorer: false
   "/support/autosupport/messages":
     get:
@@ -4281,7 +4281,7 @@ paths:
         title: Retrieve event catalog definitions
         category: support
         filename: get-support-ems-messages.html
-        subcategory: EMS event catalog
+        subcategory: Manage the EMS event catalog
         explorer: false
   "/support/snmp":
     get:
