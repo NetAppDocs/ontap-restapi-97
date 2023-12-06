@@ -2701,10 +2701,10 @@ paths:
   "/security/authentication/password":
     post:
       x-doc:
-        title: Update a user account password
+        title: Update the user account password
         category: security
         filename: post-security-authentication-password.html
-        subcategory: Update user account password
+        subcategory: Update the user account password
         explorer: false
   "/security/authentication/publickeys":
     get:
