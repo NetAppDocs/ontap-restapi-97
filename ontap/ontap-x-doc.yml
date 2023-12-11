@@ -1071,7 +1071,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Create audit configuration
+        title: Create an audit configuration
         category: NAS
         filename: post-protocols-audit.html
         subcategory: Manage NAS audit configurations 
@@ -1079,21 +1079,21 @@ paths:
   "/protocols/audit/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete audit configuration
+        title: Delete an audit configuration
         category: NAS
         filename: delete-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
         explorer: false
     get:
       x-doc:
-        title: Retrieve audit configuration for an SVM
+        title: Retrieve the audit configuration for an SVM
         category: NAS
         filename: get-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
         explorer: false
     patch:
       x-doc:
-        title: Update audit configuration for an SVM
+        title: Update the audit configuration for an SVM
         category: NAS
         filename: patch-protocols-audit-.html
         subcategory: Manage NAS audit configurations 
@@ -1484,7 +1484,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP mode
+        title: Update the NDMP mode
         category: ndmp
         filename: patch-protocols-ndmp.html
         subcategory: Manage NDMP mode
@@ -1492,7 +1492,7 @@ paths:
   "/protocols/ndmp/nodes":
     get:
       x-doc:
-        title: Retrieve NDMP node configurations for all nodes
+        title: Retrieve the NDMP node configurations for all nodes
         category: ndmp
         filename: get-protocols-ndmp-nodes.html
         subcategory: Manage NDMP node configurations
@@ -1500,14 +1500,14 @@ paths:
   "/protocols/ndmp/nodes/{node.uuid}":
     get:
       x-doc:
-        title: Retrieve NDMP node configuration for a node
+        title: Retrieve the NDMP node configuration for a node
         category: ndmp
         filename: get-protocols-ndmp-nodes-.html
         subcategory: Manage NDMP node configurations
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP node configuration for a node
+        title: Update the NDMP node configuration for a node
         category: ndmp
         filename: patch-protocols-ndmp-nodes-.html
         subcategory: Manage NDMP node configurations
@@ -1546,14 +1546,14 @@ paths:
   "/protocols/ndmp/svms/{svm.uuid}":
     get:
       x-doc:
-        title: Retrieve NDMP configuration for an SVM
+        title: Retrieve the NDMP configuration for an SVM
         category: ndmp
         filename: get-protocols-ndmp-svms-.html
         subcategory: Manage NDMP configuration of SVM
         explorer: false
     patch:
       x-doc:
-        title: Update NDMP configuration for an SVM
+        title: Update the NDMP configuration for an SVM
         category: ndmp
         filename: patch-protocols-ndmp-svms-.html
         subcategory: Manage NDMP configuration of SVM
@@ -1563,7 +1563,7 @@ paths:
   "/protocols/nfs/connected-clients":
     get:
       x-doc:
-        title: Retrieve NFS configuration for an SVM
+        title: Retrieve the NFS configuration for an SVM
         category: NAS
         filename: get-protocols-nfs-connected-clients.html
         subcategory: View NFS connected clients 
@@ -1976,21 +1976,21 @@ paths:
   "/protocols/s3/services/{svm.uuid}":
     delete:
       x-doc:
-        title: Delete S3 server configuration for an SVM
+        title: Delete the S3 server configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
         explorer: false
     get:
       x-doc:
-        title: Retrieve S3 server configuration for an SVM
+        title: Retrieve the S3 server configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
         explorer: false
     patch:
       x-doc:
-        title: Update S3 server configuration for an SVM
+        title: Update the S3 server configuration for an SVM
         category: Object-store
         filename: patch-protocols-s3-services-.html
         subcategory: Manage protocols S3 services
@@ -2013,7 +2013,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/buckets/{uuid}":
     delete:
       x-doc:
-        title: Delete S3 bucket configuration for an SVM
+        title: Delete an S3 bucket configuration for an SVM
         category: Object-store
         filename: delete-protocols-s3-services-buckets-.html
         subcategory: Manage S3 service bucket configuration
@@ -2061,7 +2061,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve S3 user configuration for an SVM
+        title: Retrieve the S3 user configuration for an SVM
         category: Object-store
         filename: get-protocols-s3-services-users-.html
         subcategory: Manage S3 service users
@@ -2547,7 +2547,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Define remote syslog or splunk server information
+        title: Define the remote syslog or splunk server information
         category: security
         filename: post-security-audit-destinations.html
         subcategory: Forward audit logs to syslog/splunk servers
@@ -2555,21 +2555,21 @@ paths:
   "/security/audit/destinations/{address}/{port}":
     delete:
       x-doc:
-        title: Delete remote syslog or splunk server information
+        title: Delete the remote syslog or splunk server information
         category: security
         filename: delete-security-audit-destinations-.html
         subcategory: Forward audit logs to syslog/splunk servers
         explorer: false
     get:
       x-doc:
-        title: Retrieve remote syslog or splunk server information
+        title: Retrieve the remote syslog or splunk server information
         category: security
         filename: get-security-audit-destinations-.html
         subcategory: Forward audit logs to syslog/splunk servers
         explorer: false
     patch:
       x-doc:
-        title: Update remote syslog or splunk server information
+        title: Update the remote syslog or splunk server information
         category: security
         filename: patch-security-audit-destinations-.html
         subcategory: Forward audit logs to syslog/splunk servers
@@ -2577,7 +2577,7 @@ paths:
   "/security/audit/messages":
     get:
       x-doc:
-        title: Retrieve administrative audit log viewer
+        title: Retrieve the administrative audit log viewer
         category: security
         filename: get-security-audit-messages.html
         subcategory: View administrative audit logs
@@ -2606,7 +2606,7 @@ paths:
         explorer: false
     post:
       x-doc:
-        title: Confgure a data SVM as a proxy 
+        title: Configure a data SVM as a proxy 
         category: security
         filename: post-security-authentication-cluster-ad-proxy.html
         subcategory: Manage data SVM account information
@@ -2614,28 +2614,28 @@ paths:
   "/security/authentication/cluster/ldap":
     delete:
       x-doc:
-        title: Delete LDAP configuration for the cluster
+        title: Delete the LDAP configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve LDAP configuration for the cluster
+        title: Retrieve the LDAP configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     patch:
       x-doc:
-        title: Update LDAP configuration for the cluster
+        title: Update the LDAP configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
         explorer: false
     post:
       x-doc:
-        title: Create LDAP configuration for the cluster
+        title: Create the LDAP configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-ldap.html
         subcategory: Manage LDAP server configuration
@@ -2643,28 +2643,28 @@ paths:
   "/security/authentication/cluster/nis":
     delete:
       x-doc:
-        title: Delete NIS configuration for the cluster
+        title: Delete the NIS configuration for the cluster
         category: security
         filename: delete-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     get:
       x-doc:
-        title: Retrieve NIS configuration for the cluster
+        title: Retrieve the NIS configuration for the cluster
         category: security
         filename: get-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     patch:
       x-doc:
-        title: Update NIS configuration for the cluster
+        title: Update the NIS configuration for the cluster
         category: security
         filename: patch-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
         explorer: false
     post:
       x-doc:
-        title: Create NIS configuration for the cluster
+        title: Create the NIS configuration for the cluster
         category: security
         filename: post-security-authentication-cluster-nis.html
         subcategory: Manage NIS configuration
