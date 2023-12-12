@@ -2040,7 +2040,7 @@ paths:
   "/protocols/s3/services/{svm.uuid}/users":
     get:
       x-doc:
-        title: Retrieve SVM configuration for an S3 user 
+        title: Retrieve the SVM configuration for an S3 user 
         category: Object-store
         filename: get-protocols-s3-services-users.html
         subcategory: Manage S3 service users
