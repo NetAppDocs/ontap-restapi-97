@@ -78877,12 +78877,15 @@ paths:
         ### Examples
         1. Sets the SnapLock retention time of a file:
            <br/>
+           +
            ```
            PATCH "/api/storage/snaplock/file/000dc5fd-4175-11e9-b937-0050568e3f82/%2Ffile2.txt" '{"expiry_time": "2030-02-14T18:30:00+5:30"}'
            ```
            <br/>
+           +
         2. Extends the retention time of a WORM file:
            <br/>
+           +
            ```
            PATCH "/api/storage/snaplock/file/000dc5fd-4175-11e9-b937-0050568e3f82/%2Ffile2.txt" '{"expiry_time": "infinite"}'
            ```
@@ -87415,18 +87418,18 @@ tags:
     ---
     Prior to creating an application, the following prerequisites must be met for the protocols associated with the template:
     * Licences must be installed.
-      * [`POST /cluster/licensing/licenses`](#cluster/license_create)
+      ** [`POST /cluster/licensing/licenses`](#cluster/license_create)
     * Aggregates must exist with enough available space and IOPS to satisfy the requested size.
       * [`POST /storage/aggregates`](#storage/aggregate_create)
     * An SVM must exist with protocol services enabled.
-      * [`POST /svm/svms`](#svm/svm_create)
+      ** [`POST /svm/svms`](#svm/svm_create)
     * LIFs must exist. For SAN applications, only High Availability groups where each node has at least on LIF will be considered for placement of storage objects.
-      * [`POST /network/ip/interfaces`](#networking/network_ip_interfaces_create)
-      * [`POST /network/fc/interfaces`](#networking/fc_interface_create)
+      ** [`POST /network/ip/interfaces`](#networking/network_ip_interfaces_create)
+      ** [`POST /network/fc/interfaces`](#networking/fc_interface_create)
     ---
     The following are not required prior to creating an application, but might be necessary before connecting to the application:
     * Network routes must be created to access ethernet based LIFs.
-      * [`POST /network/ip/routes`](#networking/network_ip_routes_create)
+      ** [`POST /network/ip/routes`](#networking/network_ip_routes_create)
     * For volumes created by this operation to be successfully mounted, ONTAP requirements related to mounting must be met.
     ---
     ```
