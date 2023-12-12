@@ -174,14 +174,14 @@ paths:
   "/cluster":
     get:
       x-doc:
-        title: Retrieve a cluster configuration
+        title: Retrieve the cluster configuration
         category: cluster
         filename: get-cluster.html
         subcategory: Manage clusters
         explorer: false
     patch:
       x-doc:
-        title: Update a cluster configuration 
+        title: Update the cluster configuration 
         category: cluster
         filename: patch-cluster.html
         subcategory: Manage clusters
@@ -1202,7 +1202,7 @@ paths:
         explorer: false
     get:
       x-doc:
-        title: Retrieve SMB session information for an SMB connection in a SVM node
+        title: Retrieve SMB session information for an SMB connection in an SVM node
         category: NAS
         filename: get-protocols-cifs-sessions--.html
         subcategory: View CIFS active sessions
@@ -1303,7 +1303,7 @@ paths:
   "/protocols/cifs/unix-symlink-mapping/{svm.uuid}/{unix_path}":
     delete:
       x-doc:
-        title: Delete UNIX symbolic link mapping for CIFS clients
+        title: Delete a UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: delete-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
@@ -1317,7 +1317,7 @@ paths:
         explorer: false
     patch:
       x-doc:
-        title: Update UNIX symbolic link mapping for CIFS clients
+        title: Update a UNIX symbolic link mapping for CIFS clients
         category: NAS
         filename: patch-protocols-cifs-unix-symlink-mapping-.html
         subcategory: Manage CIFS UNIX symlink mapping
@@ -3879,14 +3879,14 @@ paths:
         title: Retrieve Snapshot copy policies
         category: storage
         filename: get-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
     post:
       x-doc:
         title: Create a Snapshot copy policy
         category: storage
         filename: post-storage-snapshot-policies.html
-        subcategory: Create and retrieve Snapshot copy policies
+        subcategory: Manage Snapshot copy policies
         explorer: false
   "/storage/snapshot-policies/{snapshot-policy.uuid}/schedules":
     get:
@@ -3931,21 +3931,21 @@ paths:
         title: Delete a Snapshot copy policy
         category: storage
         filename: delete-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     get:
       x-doc:
         title: Retrieve Snapshot copy policy details
         category: storage
         filename: get-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies 
         explorer: false
     patch:
       x-doc:
         title: Update a Snapshot copy policy
         category: storage
         filename: patch-storage-snapshot-policies-.html
-        subcategory: Manage Snapshot copy policies and schedules
+        subcategory: Manage Snapshot copy policies
         explorer: false
   
   
