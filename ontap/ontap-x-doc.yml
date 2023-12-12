@@ -3087,7 +3087,7 @@ paths:
   "/security/ssh":
     get:
       x-doc:
-        title: Retrieve cluster SSH server ciphers, mac algorithms, key exchange algorithms, and connection limits
+        title: Retrieve cluster SSH server ciphers, MAC algorithms, key exchange algorithms, and connection limits
         category: security
         filename: get-security-ssh.html
         subcategory: Manage SSH server
