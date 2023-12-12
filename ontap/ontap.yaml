@@ -33024,7 +33024,7 @@ paths:
         Component Snapshot copies are essentially more granular application Snapshot copies. There is no difference beyond the scope of the operation.
         ### Learn more
         * [`DOC /application/applications/{application.uuid}/snapshots`](#docs-application-application_applications_{application.uuid}_snapshots)
-        * [`DELETE /application/applications/{uuid}/snapshots`](#operations-application-application_snapshot_delete)
+        * [`DELETE /application/applications/{application.uuid}/snapshots/{uuid}`](#operations-application-application_snapshot_delete)
         * [`DOC /application`](#docs-application-overview)
       operationId: application_component_snapshot_delete
       parameters:
@@ -33956,7 +33956,13 @@ paths:
     patch:
       description: |-
         Updates the cluster configuration after the cluster is created.
-        ### Related ONTAP commands * `cluster identity modify` * `system node modify` * `vserver services dns modify` * `vserver services name-service dns modify` * `timezone` * `security ssl modify`
+        ### Related ONTAP commands 
+        * `cluster identity modify` 
+        * `system node modify` 
+        * `vserver services dns modify` 
+        * `vserver services name-service dns modify` 
+        * `timezone` 
+        * `security ssl modify`
         ### Learn more
         * [`DOC /cluster`](#docs-cluster-cluster)
       operationId: cluster_modify
@@ -38080,9 +38086,7 @@ paths:
         #### HTTPS error codes
         The following is a list of possible error codes that can be returned during a package delete operation.
         <br/>
-        ```
         # ONTAP Error Response codes
-        | ----------- | -------------------------------------------------------- |
         | Error codes |                     Description                          |
         | ----------- | -------------------------------------------------------- |
         | 10551315    | Package store is empty                                   |
@@ -38095,8 +38099,6 @@ paths:
         | 10551347    | Package delete failed since an update is in progress     |
         | 10551367    | A package synchronization is in progress                 |
         | 10551388    | Package delete operation timed out                       |
-        | ----------- | -------------------------------------------------------- |
-        ```
         ---
         ### Retrieving software installation history information
         The following example shows how to:
@@ -50944,7 +50946,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     patch:
       description: |
         Updates the NDMP mode.
@@ -50971,7 +50973,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     x-ntap-long-description:
       description: |
         You can use this API to manage NDMP mode: SVM-scope or node-scope.
@@ -50989,7 +50991,7 @@ paths:
            ```
            <br/>
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/nodes:
     get:
       description: |
@@ -51040,7 +51042,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     x-ntap-long-description:
       description: |
         You can use this API to manage node configurations. The authentication types "plaintext" and "plaintext_sso" are used to show that the password uses clear text. Also, they contain no differences for NDMP node scope.
@@ -51058,7 +51060,7 @@ paths:
            ```
            <br/>
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/nodes/{node.uuid}:
     get:
       description: |
@@ -51091,7 +51093,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     patch:
       description: |
         Updates the NDMP node configuration for a specific node.
@@ -51128,7 +51130,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/sessions:
     get:
       description: |
@@ -51279,7 +51281,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     x-ntap-long-description:
       description: |
         You can use this API to manage diagnostic information on NDMP sessions belonging to a specific SVM in the case of SVM-scope or to a specific node in the case of node-scope.
@@ -51309,7 +51311,7 @@ paths:
         ```
         <br/>
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/sessions/{owner.uuid}/{session.id}:
     delete:
       description: |
@@ -51347,7 +51349,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     get:
       description: |
         Retrieves the details of a specific NDMP session.
@@ -51384,7 +51386,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/svms:
     get:
       description: |
@@ -51426,7 +51428,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     x-ntap-long-description:
       description: |
         You can use this API to manage NDMP configurations of SVMs.
@@ -51444,7 +51446,7 @@ paths:
            ```
            <br/>
       tags:
-      - ndmp
+      - NDMP 
   /protocols/ndmp/svms/{svm.uuid}:
     get:
       description: |
@@ -51471,7 +51473,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - ndmp
+      - NDMP 
     patch:
       description: |
         Updates the NDMP configuration for a specific SVM.
@@ -51500,7 +51502,7 @@ paths:
         default:
           description: Error
       tags:
-      - ndmp
+      - NDMP 
   /protocols/nfs/connected-clients:
     get:
       description: |-
@@ -68730,7 +68732,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     post:
       description: |
         Creates a SnapMirror policy. The property "identity_preservation" is applicable to only SnapMirror relationships with SVM endpoints and it indicates which configuration of the source SVM is replicated to the destination SVM.</br>
@@ -68803,7 +68805,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     x-ntap-long-description:
       description: |
         ## Managing SnapMirror policies
@@ -68812,12 +68814,13 @@ paths:
         | CLI                | REST                |
         |--------------------|---------------------|
         |mirror-vault        | async               |
-        |                    |       |  sync_type  |
-        |                    |       |-------------|
+        
+        |     CLI            | REST  |  sync_type  |
+        |-------------|-----|-------------|
         |sync-mirror         | sync  |  sync       |
         |strict-sync-mirror  | sync  | strict_sync |
       tags:
-      - snapmirror
+      - SnapMirror 
   /snapmirror/policies/{uuid}:
     delete:
       description: |
@@ -68850,7 +68853,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     get:
       description: |
         Retrieves a specific SnapMirror policy.
@@ -68884,7 +68887,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     patch:
       description: |
         Updates the SnapMirror policy.
@@ -68941,7 +68944,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
   /snapmirror/relationships:
     get:
       description: |
@@ -69091,7 +69094,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     post:
       description: |
         Creates a SnapMirror relationship. This API can optionally provision the destination endpoint when it does not exist. This API must be executed on the cluster containing the destination endpoint unless the destination endpoint is being provisioned. When the destination endpoint is being provisioned, this API can also be executed from the cluster containing the source endpoint.
@@ -69229,7 +69232,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     x-ntap-long-description:
       description: |
         ## Overview
@@ -69240,7 +69243,7 @@ paths:
         - SnapMirror relationship APIs are used to create and manage the SnapMirror relationships.
         - SnapMirror transfer APIs are used to manage data transfers.
       tags:
-      - snapmirror
+      - SnapMirror 
   /snapmirror/relationships/{relationship.uuid}/transfers:
     get:
       description: |
@@ -69325,7 +69328,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     post:
       description: |
         Starts a SnapMirror transfer operation. This API initiates a restore operation if the SnapMirror relationship is of type "restore". Otherwise, it intiates a SnapMirror "initialize" operation or "update" operation based on the current SnapMirror state.
@@ -69384,14 +69387,14 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     x-ntap-long-description:
       description: |
         ## Overview
         This API is used to manage transfers on an existing SnapMirror relationship.</br>
         You can initiate SnapMirror operations such as "initialize", "update", "restore-transfer", and "abort" using this API and it only manages the active transfers on the specified relationship. For the restore relationships, the POST on transfers API triggers "restore-transfer". Successful completion of "restore"  also deletes the restore relationship. If the "restore" fails, DELETE on relationships must be called to delete the restore relationship.
       tags:
-      - snapmirror
+      - SnapMirror 
   /snapmirror/relationships/{relationship.uuid}/transfers/{uuid}:
     get:
       description: |
@@ -69429,7 +69432,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     patch:
       description: |
         Aborts an ongoing SnapMirror transfer.
@@ -69474,7 +69477,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
   /snapmirror/relationships/{uuid}:
     delete:
       description: |
@@ -69562,7 +69565,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     get:
       description: |
         Retrieves a SnapMirror relationship.
@@ -69604,7 +69607,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
     patch:
       description: |
         Updates a SnapMirror relationship. This API is used to initiate SnapMirror operations such as "initialize", "resync", "break", "quiesce", and "resume" by specifying the appropriate value for the "state" field. It is also used to modify the SnapMirror policy associated with the specified relationship.
@@ -69730,7 +69733,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snapmirror
+      - SnapMirror 
   /storage/aggregates:
     get:
       description: |-
@@ -78014,7 +78017,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     post:
       description: |
         Creates a SnapLock log configuration for an SVM. A SnapLock log configuration consists of a volume to store the log, the maximum size of the log file, and the default period of time for which the log file should be retained. The input parameter retention_period expects the duration in ISO 8601 format.
@@ -78058,7 +78061,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         The SnapLock log volume can be a SnapLock Compliance volume or SnapLock Enterprise volume. The SnapLock log infrastructure creates directories and files in this volume to store the SnapLock log records. The maximum log size specifies the maximum size of a log file that stores SnapLock log records. When the file reaches this size, the log infrastructure archives it and creates a new log file. The default retention period is the length of time the log file is retained, if the SnapLock log records that are stored in the file do not carry any retention period.
@@ -78119,7 +78122,7 @@ paths:
            PATCH "/api/storage/snaplock/audit-logs/c7e4fa7d-2968-11e9-a26f-0050568e5b05" '{"log_archive":{"archive":"true","base_name":"privileged_delete"}}'
            ```
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/audit-logs/{svm.uuid}:
     delete:
       description: |
@@ -78150,7 +78153,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves SnapLock logs for the specified SVM.
@@ -78176,7 +78179,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     patch:
       description: |
         Updates one of the following:
@@ -78217,7 +78220,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/compliance-clocks:
     get:
       description: |
@@ -78243,12 +78246,12 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         This API manages the ComplianceClock of the system. ComplianceClock determines the expiry time of the SnapLock objects in the system. The user can initialize the ComplianceClock once and when it is set, it cannot be changed by the user. ComplianceClock initialize is not supported in REST.
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/compliance-clocks/{node.uuid}:
     get:
       description: |
@@ -78275,7 +78278,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/event-retention/operations:
     get:
       description: |
@@ -78306,7 +78309,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     post:
       description: |
         Creates an EBR policy.
@@ -78335,7 +78338,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         Use this API to display all Event Based Retention (EBR) operations and to apply an EBR policy on a specified volume.
@@ -78384,7 +78387,7 @@ paths:
         ```
         <br/>
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/event-retention/operations/{id}:
     delete:
       description: |
@@ -78412,7 +78415,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves a list of attributes for an EBR operation.
@@ -78438,7 +78441,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/event-retention/policies:
     get:
       description: |
@@ -78464,7 +78467,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     post:
       description: |
         Creates an Event Based Retention (EBR) policy for an SVM. The input parameter retention_period expects the duration in ISO 8601 format or infinite.
@@ -78493,7 +78496,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         An event retention policy consists of a policy-name and a retention-period. The policy can be applied to a single file or files in a directory. Only a user with the security login role vsadmin-snaplock can perform the operation. EBR policies cannot be applied to files under a Legal-Hold.
@@ -78511,7 +78514,7 @@ paths:
            ```
            <br/>
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/event-retention/policies/{policy.name}:
     delete:
       description: |
@@ -78535,7 +78538,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves a list of attributes of the specified Event Based Retention (EBR) policy.
@@ -78561,7 +78564,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     patch:
       description: |
         Updates the retention period of an Event Based Retention (EBR) policy.
@@ -78597,7 +78600,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/file-fingerprints:
     get:
       description: |
@@ -78644,7 +78647,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     post:
       description: |
         Creates a fingerprint computation session on the file and returns a session-id. This session-id is a unique identifier that you can use to retrieve the progress of an ongoing fingerprint operation. When the operation is complete, you can use the session-id to retrieve the complete fingerprint output for the file .
@@ -78692,12 +78695,12 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         Use this API to view key information about files and volumes, including the file type (regular, WORM, or WORM appendable), the volume expiration date, and so on.
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/file-fingerprints/{id}:
     delete:
       description: |
@@ -78726,7 +78729,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves the file fingerprint information for a specific session ID.
@@ -78757,7 +78760,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/file/{volume.uuid}/{path}:
     delete:
       description: |
@@ -78793,7 +78796,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves the SnapLock retention details of the specified file. An indefinite expiry time indicates the file is under a Legal-Hold.
@@ -78828,7 +78831,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     patch:
       description: |
         Updates the SnapLock retention time of a file or extends the retention time of a WORM file. Input parameter expiry_time expects the date in ISO 8601 format or infinite.
@@ -78867,7 +78870,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         This API manages the SnapLock retention time of a file. You can perform a privileged-delete operation by executing this API.
@@ -78885,7 +78888,7 @@ paths:
            ```
            <br/>
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/litigations:
     get:
       description: |
@@ -78915,7 +78918,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     post:
       description: |
         Starts a  Legal-Hold.
@@ -78959,12 +78962,12 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         Use this API to retain Compliance-mode WORM files for the duration of a litigation. A file under a legal-hold behaves as a WORM file with an indefinite retention period. Litigation ID is a combination of volume UUID and litigation name in the format `<volume UUID>:<litigation name>`. Only a user with the security login role vsadmin-snaplock can perform the operation.
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/litigations/{id}:
     delete:
       description: |
@@ -79000,7 +79003,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves the list of ongoing operations for the specified litigation ID.
@@ -79031,7 +79034,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/litigations/{litigation.id}/files:
     get:
       description: |-
@@ -79060,12 +79063,12 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         Displays the list of files under the specified litigation ID.
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/litigations/{litigation.id}/operations:
     post:
       description: |
@@ -79107,7 +79110,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     x-ntap-long-description:
       description: |
         Manages the legal-hold operations for the specified litigation ID.
@@ -79125,7 +79128,7 @@ paths:
            ```
            <br/>
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snaplock/litigations/{litigation.id}/operations/{id}:
     delete:
       description: |
@@ -79165,7 +79168,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
     get:
       description: |
         Retrieves the status of legal-hold for the specified operation ID.
@@ -79201,7 +79204,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - snaplock
+      - SnapLock 
   /storage/snapshot-policies:
     get:
       description: |
@@ -86083,7 +86086,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     post:
       description: |
         Creates an SVM peer permission.
@@ -86145,7 +86148,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     x-ntap-long-description:
       description: |
         ## Managing SVM peer permissions
@@ -86158,7 +86161,7 @@ paths:
         - PATCH /api/svm/peer-permissions/{cluster_peer.uuid}/{svm.uuid}
         - DELETE /api/svm/peer-permissions/{cluster_peer.uuid}/{svm.uuid}
       tags:
-      - svm
+      - SVM 
   /svm/peer-permissions/{cluster_peer.uuid}/{svm.uuid}:
     delete:
       description: |
@@ -86202,7 +86205,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     get:
       description: |
         Retrieves the SVM peer permission instance.
@@ -86249,7 +86252,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     patch:
       description: |
         Updates the SVM peer permissions.
@@ -86300,7 +86303,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
   /svm/peers:
     get:
       description: |
@@ -86388,7 +86391,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     post:
       description: |
         Creates a new SVM peer relationship.
@@ -86441,7 +86444,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     x-ntap-long-description:
       description: |
         ## Managing SVM peers
@@ -86454,7 +86457,7 @@ paths:
         - PATCH /api/svm/peers/{uuid}
         - DELETE /api/svm/peers/{uuid}
       tags:
-      - svm
+      - SVM 
   /svm/peers/{uuid}:
     delete:
       description: |
@@ -86494,7 +86497,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     get:
       description: |
         Retrieves the SVM peer relationship instance.
@@ -86536,7 +86539,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     patch:
       description: |
         Updates the SVM peer relationship.
@@ -86594,7 +86597,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
   /svm/svms:
     get:
       description: |
@@ -86812,7 +86815,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     post:
       description: |
         Creates and provisions an SVM. If no IPspace is provided, then the SVM is created on the `Default` IPspace.
@@ -86979,7 +86982,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     x-ntap-long-description:
       description: |
         ## Managing SVMs
@@ -86994,7 +86997,7 @@ paths:
            Monitors jobs, network connections, network interfaces, and SVM health.
         4. Updating the TLS certificate for this SVM.
       tags:
-      - svm
+      - SVM 
   /svm/svms/{uuid}:
     delete:
       description: |
@@ -87038,7 +87041,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     get:
       description: |-
         Retrieves the properties for an individual SVM. This includes protocol configurations such as CIFS and NFS, export policies, name service configurations, and network services.
@@ -87076,7 +87079,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
     patch:
       description: |
         Updates one or more of the following properties of an individual SVM: SVM name, SVM default volume language code, SVM comment, and SVM state.
@@ -87173,7 +87176,7 @@ paths:
           schema:
             $ref: '#/definitions/error_response'
       tags:
-      - svm
+      - SVM 
 produces:
 - application/json
 - application/hal+json
