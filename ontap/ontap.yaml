@@ -32490,7 +32490,7 @@ paths:
             GET /application/applications?template.protocol=san
             ```
             <br/>
-        5. Return the top five applications consuming the most IOPS.<br/>
+        5. Return the top five applications consuming the most IOPS.
             ```
             GET /application/applications?order_by=statistics.iops.total desc&max_records=5
             ```
