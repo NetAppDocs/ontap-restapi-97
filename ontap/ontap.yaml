@@ -63222,7 +63222,7 @@ paths:
         <i>/api/security/accounts</i> for all user accounts
         <i>/api/security/accounts/?scope=cluster</i> for cluster-scoped user accounts
         <i>/api/security/accounts/?scope=svm</i> for SVM-scoped accounts
-        <i>/api/security/accounts/?owner.name=<svm-name></i> for a specific SVM
+        <i>/api/security/accounts/?owner.name={svm-name}</i> for a specific SVM
         This API response contains the complete URI for each user account that can be used.
         ## Examples
         ### Retrieving the user account details
@@ -64860,7 +64860,7 @@ paths:
       description: |
         ## Overview
         This API configures the public keys for end-user (non-cluster admin) accounts.
-        Specify the owner UUID, the user account name, and the index in the URI path. The owner UUID corresponds to the UUID of the SVM containing the user account associated with the public key and can be obtained from the response body of the GET request performed on the API “/api/svm/svms".<br/> The index value corresponds to the public key that needs to be modified or deleted (it is possible to create more than one public key for the same user account).
+        Specify the owner UUID, the user account name, and the index in the URI path. The owner UUID corresponds to the UUID of the SVM containing the user account associated with the public key and can be obtained from the response body of the GET request performed on the API \"/api/svm/svms\".<br/> The index value corresponds to the public key that needs to be modified or deleted (it is possible to create more than one public key for the same user account).
         ## Examples
         ### Retrieving the specific configured public key for user accounts
         ```
@@ -68110,7 +68110,7 @@ paths:
         Specify the owner UUID and the role name in the URI path. The owner UUID corresponds to the UUID of the SVM for which the role has been created and can be obtained from the response body of a GET call performed on one of the following APIs:
         <i>/api/security/roles</i> for all roles
         <i>/api/security/roles/?scope=svm</i> for SVM-scoped roles
-        <i>/api/security/roles/?owner.name=<svm-name></i> for roles in a specific SVM
+        <i>/api/security/roles/?owner.name={svm-name}</i> for roles in a specific SVM
         This API response contains the complete URI for each role that can be used for retrieving or deleting a role.<p/>
         Note: The pre-defined roles can be retrieved but cannot be deleted.
         ## Examples
