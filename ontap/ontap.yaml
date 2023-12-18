@@ -64860,7 +64860,7 @@ paths:
       description: |
         ## Overview
         This API configures the public keys for end-user (non-cluster admin) accounts.
-        Specify the owner UUID, the user account name, and the index in the URI path. The owner UUID corresponds to the UUID of the SVM containing the user account associated with the public key and can be obtained from the response body of the GET request performed on the API \"/api/svm/svms\.<br/> The index value corresponds to the public key that needs to be modified or deleted (it is possible to create more than one public key for the same user account).
+        Specify the owner UUID, the user account name, and the index in the URI path. The owner UUID corresponds to the UUID of the SVM containing the user account associated with the public key and can be obtained from the response body of the GET request performed on the API \"/api/svm/svms\".<br/> The index value corresponds to the public key that needs to be modified or deleted (it is possible to create more than one public key for the same user account).
         ## Examples
         ### Retrieving the specific configured public key for user accounts
         ```
