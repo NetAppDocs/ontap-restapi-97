@@ -1,5 +1,6 @@
 settings:
   name: ONTAP 9.7 REST API reference 
+  github_edit: false
   downlevel: true
   internal:
     pdf_enabled: true
