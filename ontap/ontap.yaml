@@ -80679,7 +80679,7 @@ paths:
         * `type` - _rw_
         * `encryption.enabled` - _false_
         * `snapshot_policy.name` - _default_
-        * `gaurantee.type` - _volume_
+        * `guarantee.type` - _volume_
         ### Related ONTAP commands
         * `volume create`
         * `volume clone create`
