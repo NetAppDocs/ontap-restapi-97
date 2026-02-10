@@ -18,6 +18,8 @@ settings:
   - version-number: "9.7"
     url: /ontap-restapi-97
   # Additional Releases
+  - version-number: "9.18.1"
+    url: /ontap-restapi
   - version-number: "9.17.1"
     url: /ontap-restapi
   - version-number: "9.16.1"
